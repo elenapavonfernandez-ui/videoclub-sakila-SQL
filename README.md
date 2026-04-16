@@ -1,32 +1,42 @@
-# Proyecto SQL - Base de datos Sakila
+# 🎬 Análisis SQL — Base de datos Sakila (Videoclub)
 
-- **Descripción:**
-Este proyecto utiliza la base de datos "Sakila", que simula el funcionamiento de una tienda de alquiler de películas. 
-Objetivo: practicar y reforzar los conocimientos de SQL mediante la creación y ejecución de consultas que permiten extraer, analizar y relacionar información de las diferentes tablas que componen la base de datos. 
+## Descripción
+Proyecto de análisis de datos sobre la base de datos **Sakila**, que simula el funcionamiento de una tienda de alquiler de películas. El objetivo es extraer, analizar y relacionar información mediante consultas SQL de distinta complejidad.
 
-- **Sobre la base de datos Sakila:**
-Contiene información sobre un videoclub.
-Tiene tablas como:
-- Film: información sobre películas (título, duración, año...)
-- Actor: Datos actores 
-- Customer: Información sobre clientes (nombre, apellidos, dirección)
+## Tecnologías
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-Imagen 1: parte del diagrama de la base de datos "Sakila" 
-![alt text](image.png)
+## Estructura del repositorio
+```
+videoclub-sakila-SQL/
+│
+├── README.md
+├── sakila_queries.sql   # Consultas SQL del proyecto
+└── img/
+    ├── diagrama_sakila.png    # Diagrama de la base de datos
+    └── ejemplo_query.png      # Ejemplo de consulta y resultado
+```
 
-- **Objetivos del proyecto:**
-Consultar con SQL preguntas como:
-- Seleccionar los nombres de las películas sin que aparezcan duplicados
--  Encuentra el nombre y apellido de los actores que aparecen en la película con title "Indian Love"
--  Encuentra el título de todas las películas que fueron alquiladas por más de 5 días. Utiliza una
-subconsulta para encontrar los rental_ids con una duración superior a 5 días y luego selecciona las
-películas correspondientes
+## Sobre la base de datos
+Sakila contiene información estructurada sobre un videoclub, con tablas como:
+- `film` — títulos, duración, año de lanzamiento
+- `actor` — datos de actores
+- `customer` — información de clientes
+- `rental` — registros de alquileres
 
-Etcétera. 
+![Diagrama Sakila](img/diagrama_sakila.png)
 
-Imagen 2: Una de las consultas y su resultado en SQL
-![alt text](image-1.png)
+## Consultas incluidas
+El archivo `sakila_queries.sql` cubre:
+- Filtrado y selección con `WHERE`, `DISTINCT`
+- Joins entre múltiples tablas
+- Subconsultas
+- Funciones de agregación (`COUNT`, `AVG`, `SUM`)
+- Ordenación y agrupación (`ORDER BY`, `GROUP BY`)
+- Funciones de fecha (`DATEDIFF`)
 
-- **Autora:**
-Elena Pavón Fernández
-Proyecto realizado como evaluación del módulo 2
+![Ejemplo de consulta](img/ejemplo_query.png)
+
+## Autora
+**Elena Pavón Fernández**  
+Proyecto de evaluación — Módulo 2, Adalab Data Analytics Bootcamp
