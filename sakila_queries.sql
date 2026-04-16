@@ -484,6 +484,4 @@ SELECT f.title AS título_películas
     ON c.category_id = fc.category_id
   WHERE c.`name` =  "Comedy" AND f.length > 180;
   
-  -- 25.Encuentra todos los actores que han actuado juntos en al menos una película. La consulta debe mostrar el nombre y apellido de los actores y el número de películas en las que han actuado juntos
-  
   
