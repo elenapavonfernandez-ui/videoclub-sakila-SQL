@@ -1,3 +1,15 @@
+-- ============================================================
+-- PROYECTO SQL: Análisis de base de datos Sakila (Videoclub)
+-- ============================================================
+-- Autora:       Elena Pavón Fernández
+-- Bootcamp:     Adalab Data Analytics
+-- Módulo:       2 — SQL
+-- Descripción:  Consultas de análisis sobre la base de datos
+--               Sakila, que simula una tienda de alquiler de
+--               películas. Cubre filtrado, JOINs, subconsultas,
+--               agregaciones y funciones de fecha.
+-- ============================================================
+
 USE sakila; 
 
 -- 1. Selecciona todos los nombres de las películas sin que aparezcan duplicados.
